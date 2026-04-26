@@ -36,6 +36,7 @@
             color: white ;
         }
         /* ===== NAVIGATION ===== */
+
         .navbar {
             display: flex;
             justify-content: center;
@@ -251,6 +252,9 @@
         /* ===== HERO SECTION ===== */
         .hero {
             background-size: cover;
+            background-image: url("assets/hero.webp");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
             min-height: calc(100vh - 120px);
             display: flex;
             flex-direction: column;
@@ -362,6 +366,58 @@
             flex-direction: row;
         }
 
+        .feature-wrapper {
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            padding: 120px 40px;
+        }
+        
+        .feature-wrapper-1 {
+            background-color: transparent;
+            background-image: url("assets/1.webp");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        }
+        
+        .feature-wrapper-2 {
+            background-color: transparent;
+            background-image: url("assets/2.webp");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        }
+
+        .feature-wrapper-3 {
+            background-color: transparent;
+            background-image: url("assets/3.webp");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        }
+
+        .feature-wrapper-4 {
+            background-color: transparent;
+            background-image: url("assets/4.webp");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        }
+
+        .feature-wrapper-5 {
+            background-color: transparent;
+            background-image: url("assets/5.webp");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        }
+
+        .feature-wrapper-6 {
+            background-color: transparent;
+            background-image: url("assets/6.webp");
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        }
+
         .chat-feature {
             display: flex;
             align-items: stretch;
@@ -371,7 +427,8 @@
             padding: 32px;
             gap: 60px;
             max-width: 1300px;
-            margin: 190px auto;
+            width: 100%;
+            margin: 0 auto;
             position: relative;
         }
 
@@ -529,7 +586,10 @@
             width: 100vw;
             left: 50%;
             transform: translateX(-50%);
-            margin-top: -60px;
+            margin-top: 0;
+            background-color: transparent;
+            background-image: url("assets/end.webp");
+            background-size: cover;
         }
 
         .bottom-cta-content {
