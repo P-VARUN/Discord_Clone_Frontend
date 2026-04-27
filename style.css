@@ -525,6 +525,38 @@
             height: auto;
         }
 
+        .feature-robot {
+            position: absolute;
+            bottom: calc(100% - 1px);
+            right: 15%;
+            z-index: 10;
+            scale: 1.8;
+            transform-origin: bottom center;
+        }
+
+        @keyframes bounceAndSquash {
+            0% { transform: translateX(0) scaleY(1) scaleX(1) rotate(1.3deg); }
+            100% { transform: translateX(0) scaleY(1) scaleX(1) rotate(-1.3deg); }
+            50% { transform: translateX(-15px) scaleX(1.02) scaleY(0.98)}
+        }
+
+        @keyframes colorChange {
+            0%   { fill: #14ff7a; } 
+            25%  { fill: #ff5462; } 
+            50%  { fill: #8084ff; } 
+            75%  { fill: #e0ff2e; } 
+            100% { fill: #14ff7a; }
+        }
+
+        .robot-head-group {
+            animation: bounceAndSquash 0.5s infinite alternate ease-in-out;
+            transform-origin: 90px 110px; 
+        }
+
+        .robot-skin {
+            animation: colorChange 0.4s infinite linear;
+        }
+
         /* ===== SCROLLING MARQUEE BANNER ===== */
         .scrolling-banner-wrapper {
             background: linear-gradient(135deg, #191427 0%, #3a4199 30%, #472c92 100%);
