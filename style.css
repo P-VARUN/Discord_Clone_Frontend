@@ -429,7 +429,7 @@
             display: flex;
             align-items: stretch;
             background: linear-gradient(105deg, rgba(198, 174, 255, 0.433), rgba(81, 27, 175, 0.616), rgba(58, 20, 135, 0.595), rgba(224, 224, 224, 0.167));
-            backdrop-filter: blur(15px);
+            backdrop-filter: blur(18px);
             border-radius: 100px;
             padding: 32px;
             gap: 60px;
@@ -550,6 +550,18 @@
 
         .feature-box-3 img {
             width: 570px;
+            display: block;
+        }
+
+        .feature-box-5 {
+            position: absolute;
+            top: 75%;
+            right: 86%;
+            z-index: 20;
+        }
+
+        .feature-box-5 img {
+            width: 220px;
             display: block;
         }
 
