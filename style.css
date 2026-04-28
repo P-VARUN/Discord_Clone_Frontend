@@ -418,6 +418,13 @@
             background-attachment: scroll;
         }
 
+        .chat-feature-container {
+            position: relative;
+            max-width: 1300px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
         .chat-feature {
             display: flex;
             align-items: stretch;
@@ -534,10 +541,32 @@
             transform-origin: bottom center;
         }
 
+        .feature-box-3 {
+            position: absolute;
+            top: -130px;
+            right: -11%;
+            z-index: 20;
+        }
+
+        .feature-box-3 img {
+            width: 570px;
+            display: block;
+        }
+
         @keyframes bounceAndSquash {
             0% { transform: translateX(0) scaleY(1) scaleX(1) rotate(1.3deg); }
             100% { transform: translateX(0) scaleY(1) scaleX(1) rotate(-1.3deg); }
             50% { transform: translateX(-15px) scaleX(1.02) scaleY(0.98)}
+        }
+
+        @keyframes floatingBox {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(1.5deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+
+        .floating-box {
+            animation: floatingBox 4s ease-in-out infinite;
         }
 
         @keyframes colorChange {
