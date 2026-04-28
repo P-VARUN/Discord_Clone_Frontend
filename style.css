@@ -553,6 +553,18 @@
             display: block;
         }
 
+        .feature-box-2 {
+            position: absolute;
+            top: 75%;
+            right: 70%;
+            z-index: 0;
+        }
+
+        .feature-box-2 img {
+            width: 290px;
+            display: block;
+        }
+
         .feature-box-5 {
             position: absolute;
             top: 75%;
