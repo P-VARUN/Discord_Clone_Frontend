@@ -423,6 +423,7 @@
             max-width: 1300px;
             width: 100%;
             margin: 0 auto;
+            z-index: 1;
         }
 
         .chat-feature {
@@ -550,6 +551,18 @@
 
         .feature-box-3 img {
             width: 570px;
+            display: block;
+        }
+
+        .feature-box-1-1 {
+            position: absolute;
+            bottom: -130px;
+            left: -125px;
+            z-index: -1;
+        }
+
+        .feature-box-1-1 img {
+            width: 230px;
             display: block;
         }
 
