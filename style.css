@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Montserrat:wght@900&display=swap');
 
         * {
@@ -8,8 +7,9 @@
             font-family: 'Inter', Helvetica, Arial, sans-serif;
         }
 
-        body {
+        html, body {
             overflow-x: hidden;
+            width: 100%;
         }
 
         a {
@@ -32,9 +32,18 @@
         }
 
         body {
-            background: linear-gradient(145deg, rgb(0, 0, 0), rgb(16, 41, 131), rgb(36, 9, 98) 60%, rgb(0, 0, 0) 90%);
-            color: white ;
+            color: white;
+            background-color: #000;
         }
+
+        .main-bg-wrapper {
+            background-image: url("assets/background-img.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 100%;
+            display: flow-root;
+        }
+
         /* ===== NAVIGATION ===== */
 
         .navbar {
@@ -47,7 +56,6 @@
             position: relative;
             z-index: 100;
         }
-
 
         .logo {
             display: flex;
@@ -67,7 +75,7 @@
 
         .nav-links {
             display: flex;
-            gap: 8px; /* Slight extra gap */
+            gap: 8px;
             align-items: center;
         }
 
@@ -399,15 +407,13 @@
         }
 
         .feature-wrapper {
-            width: 100vw;
+            width: 100%;
             position: relative;
-            left: 50%;
-            transform: translateX(-50%);
             display: flex;
             justify-content: center;
             padding: 120px 40px;
-            margin-top: 70px;
-            margin-bottom: 70px;
+            margin-top: 60px;
+            margin-bottom: 60px;
         }
         
         .feature-wrapper-1 {
@@ -415,6 +421,7 @@
             background-image: url("assets/1.webp");
             background-repeat: no-repeat;
             background-attachment: scroll;
+            margin-top: 200px;
         }
         
         .feature-wrapper-2 {
@@ -450,7 +457,6 @@
             background-image: url("assets/6.webp");
             background-repeat: no-repeat;
             background-attachment: scroll;
-            margin-bottom: -90px;
         }
 
         .chat-feature-container {
@@ -727,10 +733,8 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
             overflow: hidden;
             padding: 30px 0;
-            width: 100vw;
+            width: 100%;
             position: relative;
-            left: 50%;
-            transform: translateX(-50%);
             margin: 100px 0;
             display: flex;
         }
@@ -775,11 +779,9 @@
             align-items: center;
             text-align: center;
             overflow: hidden;
-            padding-top: 150px;
-            width: 100vw;
-            left: 50%;
-            transform: translateX(-50%);
-            margin-top: 0;
+            padding-top: 50px;
+            width: 100%;
+            margin-top: 60;
             background-color: transparent;
             background-image: url("assets/end.webp");
             background-size: cover;
@@ -795,9 +797,13 @@
             font-size: 58px;
             font-weight: 900;
             color: var(--discord-white);
-            margin-bottom: 40px;
+            margin-bottom: 50px;
             line-height: 1.1;
             text-transform: uppercase;
+        }
+
+        .bottom-cta img {
+            margin-bottom: -20px;
         }
 
         .footer-characters {
@@ -937,63 +943,3 @@
 
         .hero p { animation-delay: 0.2s; }
         .hero-buttons { animation-delay: 0.4s; }
-
-        /* ===== RESPONSIVE DESIGN ===== */
-        @media (max-width: 1024px) {
-            .feature-section {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .feature-section.reverse {
-                flex-direction: column;
-            }
-            
-            .footer-content {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                gap: 20px;
-            }
-            
-            .nav-links {
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 20px;
-            }
-            
-            .hero h1 {
-                font-size: 36px;
-            }
-            
-            .hero p {
-                font-size: 16px;
-            }
-            
-            .hero-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .btn-primary, .btn-secondary {
-                width: 100%;
-                max-width: 300px;
-            }
-            
-            .feature-content h2 {
-                font-size: 32px;
-            }
-            
-            .footer-content {
-                grid-template-columns: 1fr;
-            }
-            
-            .footer-bottom {
-                flex-direction: column;
-                gap: 20px;
-            }
-        }
