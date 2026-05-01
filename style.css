@@ -263,6 +263,8 @@
             padding: 40px 40px 100px;
             position: relative;
             overflow: hidden;
+            margin-left: -50px;
+            margin-bottom: -100px;
         }
 
         .hero-content {
@@ -276,7 +278,7 @@
         }
 
         .hero-text {
-            flex: 0 0 45%;
+            flex: 0 0 42%;
         }
 
         .hero-image {
@@ -285,9 +287,39 @@
         }
 
         .hero-image img {
-            width: 80%;
+            width: 95%;
             max-width: 800px;
             transform: translateX(40px);
+        }
+
+        .main-1 img{
+            position: absolute;
+            width: 179px;
+            height: auto;
+            top: 70%;
+            right: 18.3%;
+            z-index: 20;
+            transform: translate(-50%, -50%);
+        }
+
+        .main-2 img{
+            position: absolute;
+            width: 179px;
+            height: auto;
+            top: 58.5%;
+            right: 18.3%;
+            z-index: 20;
+            transform: translate(-50%, -50%);
+        }
+
+        .main-3 img{
+            position: absolute;
+            width: 63px;
+            height: auto;
+            top: 68%;
+            right: 44%;
+            z-index: 20;
+            transform: translate(-50%, -50%);
         }
 
         .hero h1 {
@@ -374,6 +406,8 @@
             display: flex;
             justify-content: center;
             padding: 120px 40px;
+            margin-top: 70px;
+            margin-bottom: 70px;
         }
         
         .feature-wrapper-1 {
@@ -416,6 +450,7 @@
             background-image: url("assets/6.webp");
             background-repeat: no-repeat;
             background-attachment: scroll;
+            margin-bottom: -90px;
         }
 
         .chat-feature-container {
@@ -554,6 +589,18 @@
             display: block;
         }
 
+        .feature-box-4 {
+            position: absolute;
+            top: 98%;
+            left: -6%;
+            z-index: 20;
+        }
+
+        .feature-box-4 img {
+            width: 210px;
+            display: block;
+        }
+
         .feature-box-1-1 {
             position: absolute;
             bottom: -130px;
@@ -587,6 +634,54 @@
 
         .feature-box-5 img {
             width: 220px;
+            display: block;
+        }
+
+        .feature-box-5-1 {
+            position: absolute;
+            top: -25%;
+            right: 7%;
+            z-index: 0;
+        }
+
+        .feature-box-5-1 img {
+            width: 220px;
+            display: block;
+        }
+
+        .feature-box-5-2 {
+            position: absolute;
+            top: -22.2%;
+            right: 20.5%;
+            z-index: 20;
+        }
+
+        .feature-box-5-2 img {
+            width: 220px;
+            display: block;
+        }
+
+        .feature-box-5-3 {
+            position: absolute;
+            top: 0.69%;
+            right: 21.5%;
+            z-index: 0;
+        }
+
+        .feature-box-5-3 img {
+            width: 220px;
+            display: block;
+        }
+
+        .feature-box-6 {
+            position: absolute;
+            top: -38%;
+            right: 1%;
+            z-index: 0;
+        }
+
+        .feature-box-6 img {
+            width: 290px;
             display: block;
         }
 
